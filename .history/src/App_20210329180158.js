@@ -10,13 +10,11 @@ const App = () => {
       <NavBar />
       <div className="App">
         <header className="app-header">
-          <div className="image">
-            <img
-              src="https://www.logomaker.com/wp-content/uploads/2019/02/iStock-921437050-800x358.jpg"
-              className="App-logo"
-              alt="logo"
-            />
-          </div>
+          <img
+            src="https://cdn.dribbble.com/users/5325964/screenshots/11432898/media/f6a4fcbd45cb1cd36e1b2fb088a3eabc.png"
+            className="App-logo"
+            alt="logo"
+          />
         </header>
         <Todo />
       </div>

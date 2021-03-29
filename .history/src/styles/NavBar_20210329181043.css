@@ -1,0 +1,26 @@
+nav.navbar {
+  background: transparent;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  @media screen and (max-width: 960px) {
+    transition: 0.8s all ease;
+  }
+}
+
+.navbar.active {
+  background: red;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1:hover {
+  color: white;
+}

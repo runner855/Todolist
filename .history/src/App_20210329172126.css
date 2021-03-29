@@ -1,0 +1,15 @@
+.App {
+  max-width: 50em;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.todo-input {
+  font-size: 24px;
+  border: none;
+  width: 100%;
+}
+
+.todo-input:focus {
+  outline: none;
+}
