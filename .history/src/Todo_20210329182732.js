@@ -41,22 +41,20 @@ const Todo = () => {
   return (
     <div>
       <br></br>
-      <div className="field">
-        <input
-          className="todo-input"
-          value={currentTodo}
-          onChange={(e) => {
-            setCurrentTodo(e.target.value);
-          }}
-          onKeyPress={(e) => {
-            if (e.key === "Enter") {
-              createTodo(currentTodo);
-              setCurrentTodo("");
-            }
-          }}
-          placeholder="what do you need to do?"
-        />
-      </div>
+      <input
+        className="todo-input"
+        value={currentTodo}
+        onChange={(e) => {
+          setCurrentTodo(e.target.value);
+        }}
+        onKeyPress={(e) => {
+          if (e.key === "Enter") {
+            createTodo(currentTodo);
+            setCurrentTodo("");
+          }
+        }}
+        placeholder="what do you need to do?"
+      />
       {todos.map((todo, index) => (
         <div key={todo} className="todo">
           <div className="checkbox" onClick={() => completeTodo(index)}>
